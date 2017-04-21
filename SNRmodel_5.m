@@ -7,15 +7,15 @@ sim('Dnote3lv3rd');
 
 %初期値設定//////////////////////////////////////////////////////////////////
 % N = 128*48*50;
-% N = length(simout);                     %plot数
+% N = length(simout);                       %plot数
 % osr = 128;                                %OSR
-% Fs = 48000*osr;                            %サンプリング周波数(正規化したい場合は1)
+% Fs = 48000*osr;                           %サンプリング周波数(正規化したい場合は1)
 % Ts = 1/Fs;
 % simtime = Ts*N;  
 % w_in = 2*pi*1000;                         %入力周波数10kHzと設定
                                   
-fBmax = ceil(20000/Fs*N);                  % 帯域幅を設定
-fBmin = ceil(20/Fs*N);    % 帯域幅を設定
+fBmax = ceil(20000/Fs*N);                   % 帯域幅を設定
+fBmin = ceil(20/Fs*N);                      % 帯域幅を設定
 suso = 20;
 
 simfft_norm = 0;
